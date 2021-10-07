@@ -1,13 +1,21 @@
-h1{
+h2{
 font-weight: bold;
+font-size: 200px !important;
 font-family: 'BenchNine', sans-serif;
 }
-h2,h3 {
-font-family: 'BenchNine', sans-serif;
+h1,h3 {
+font-family: 'Rubik', sans-serif;
 }
 h2 {
     font-weight: bold;
 }
 h3 {
     font-weight: normal;
+}
+nav {
+    font-family: 'BenchNine', sans-serif;
+}
+.hero {
+    background-color: teal;
+    padding: 10px;
 }
