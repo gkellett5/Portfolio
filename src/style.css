@@ -15,8 +15,8 @@ nav {
   font-family: "BenchNine", sans-serif;
 }
 .hero {
-  background-color: teal;
-  padding: 10px;
+  background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  padding: 50px 10px 10px;
 }
 .logo {
   max-width: 50px;
@@ -29,4 +29,9 @@ nav {
 }
 .image {
   max-width: 500px;
+}
+.about {
+  border-radius: 360px;
+  display: block;
+  max-width: 300px;
 }
