@@ -32,6 +32,27 @@ nav {
 }
 .about {
   border-radius: 360px;
-  display: block;
   max-width: 300px;
+}
+.card-container {
+  perspective: 600;
+  max-width: 500px;
+  position: relative;
+}
+.card {
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+}
+.card .back {
+  transform: rotateY(180deg);
 }
