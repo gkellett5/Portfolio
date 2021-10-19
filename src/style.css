@@ -16,6 +16,10 @@ h3 {
 nav {
   font-family: "BenchNine", sans-serif;
 }
+footer {
+  background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  padding: 20px 10px;
+}
 .hero {
   background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   padding: 50px 10px 10px;
@@ -30,9 +34,23 @@ nav {
   transform: rotate(360deg);
 }
 .image {
-  max-width: 500px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 .about {
   border-radius: 360px;
   max-width: 300px;
+}
+.footer-image {
+  max-width: 75px;
+  border-radius: 360px;
+  float: right;
+}
+.work-info {
+  margin: 25px 75px;
+}
+#email-address, #telephone-number {
+  color: black;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
 }
