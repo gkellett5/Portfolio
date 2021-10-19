@@ -6,6 +6,8 @@ h2 {
 h1 {
   font-family: "Rubik", sans-serif;
   font-weight: bold;
+  padding-top: 40px;
+  margin: 0;
 }
 h3 {
   font-weight: lighter;
@@ -19,7 +21,7 @@ nav {
   padding: 50px 10px 10px;
 }
 .logo {
-  max-width: 50px;
+  max-width: 30px;
   opacity: 0.5;
   transition: all 2s ease-in-out;
 }
@@ -33,26 +35,4 @@ nav {
 .about {
   border-radius: 360px;
   max-width: 300px;
-}
-.card-container {
-  perspective: 600;
-  max-width: 500px;
-  position: relative;
-}
-.card {
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 100%;
-}
-.card:hover {
-  transform: rotateY(180deg);
-}
-.card .side {
-  backface-visibility: hidden;
-  height: 100%;
-  width: 100%;
-}
-.card .back {
-  transform: rotateY(180deg);
 }
