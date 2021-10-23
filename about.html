@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Rubik:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=BenchNine&family=Work+Sans:wght@200;400&display=swap"
       rel="stylesheet"
     />
     <script
@@ -43,7 +43,7 @@
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="/">Home</a>
             <a class="nav-link" href="/work.html">My Work</a>
-            <a class="nav-link" href="/about.html">About Me</a>
+            <a class="nav-link" href="/about.html">A Bit About Me</a>
           </div>
         </div>
       </div>
@@ -51,27 +51,114 @@
   </head>
   <body>
     <div class="hero">
-      <h2>HELLO.</h2>
-      <h1>Gemma Kellett</h1>
-      <h3>Junior Front-End Developer</h3>
+      <div class="d-flex flex-row justify-content-evenly">
+        <h2>ABOUT.</h2>
+        <div class="d-flex flex-column">
+          <h1>Gemma Kellett</h1>
+          <h3>Front-End Developer</h3>
+          <br />
+          <a
+            class="btn btn-outline-dark col-6 mx-auto"
+            href="/about.html#contact-me"
+            role="button"
+            >Contact Me</a
+          >
+        </div>
+      </div>
     </div>
     <br />
     <div class="container">
       <div class="row">
-        <div class="col-md-6">This is me...
+        <div class="col-md-6 col-lg-8">
           <p>
-        A love of code has grown from my Mathematics degree, particularly the
-        use of LaTeX and experience with algorithms. This coupled with a strong
-        interest in design has led to really enjoying building on my skill set
-        in web development.
-        <br />
-        <a href="/work.html" id="learn-more">Learn More →</a>
-      </p>
+            Hello! My name is Gemma, I am an dual Canadian-British citizen,
+            currently living in British Columbia, Canada and training to be a
+            Front-End Developer/Designer.
+            <br />
+            <br />
+            A love of code has grown from my degree in Mathematics, particularly
+            the use of LaTeX and experience with algorithms. This coupled with a
+            strong interest in design has led to me really enjoying building on my
+            skill set in web development.
+            <br />
+            <br />
+            <a href="/work.html" id="learn-more">View My Work →</a>
+          </p>
         </div>
-        <div class="col-md-6">
-          <img src="images/me.jpg" alt="photo of me" class="image about" />
+        <div class="col-md-6 col-lg-4 p-2">
+          <img src="images/me.jpg" alt="photo of me" class="image headshot mx-auto d-block" />
+        </div>
+        
+        <p>
+          A little bit about me... My free time is spent mainly outdoors; or
+          making weird and wonderful artistic creations. Myself, and dog Pepper,
+          are no stranger to an adventure, whether it be hiking, mountain
+          biking, skiing or just exploring FSRs in my trusty Tacoma, Terry.
+        </p>
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-2 p-2">
+            <img
+              src="images/ski.jpg"
+              alt="photo of me skiing"
+              class="image about mx-auto d-block"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 p-2">
+            <img
+              src="images/bike.jpg"
+              alt="photo of me biking"
+              class="image about mx-auto d-block"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 p-2">
+          <img
+            src="images/car.jpg"
+            alt="photo of me, pepper & terry"
+            class="image about mx-auto d-block"
+          />
+        </div>
+          <div class="col-6 col-md-4 col-lg-2 p-2">
+            <img
+              src="images/hike.jpg"
+              alt="photo of me hiking"
+              class="image about mx-auto d-block"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 p-2">
+            <img
+              src="images/snow.jpg"
+              alt="photo of me hiking"
+              class="image about mx-auto d-block"
+            />
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 p-2">
+            <img
+              src="images/bike1.jpg"
+              alt="photo of me biking"
+              class="image about mx-auto d-block"
+            />
+          </div>
         </div>
       </div>
     </div>
+
+    <footer>
+      <div class="container" id="contact-me">
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="images/me.jpg" alt="photo of me" class="footer-image" />
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex flex-column">
+              <h4>Contact Me</h4>
+              <a href="tel:6049060655" id="telephone-number">604-906-0655</a>
+              <a href="mailto:g.kellett@outlook.com" id="email-address"
+                >g.kellett@outlook.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

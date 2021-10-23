@@ -1,43 +1,39 @@
-h2 {
-  font-weight: bold;
-  font-size: 200px !important;
-  font-family: "BenchNine", sans-serif;
+:root {
+  --heading-font-family: "BenchNine", sans-serif;
+  --default-font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family) !important;
+  font-weight: 200 !important;
 }
 h1 {
-  font-family: "Rubik", sans-serif;
-  font-weight: bold;
   padding-top: 40px;
   margin: 0;
+  text-transform: uppercase;
+  font-family: var(--heading-font-family);
+  letter-spacing: 6px;
+}
+h2 {
+  font-size: 200px !important;
+  font-family: var(--heading-font-family);
 }
 h3 {
-  font-weight: lighter;
-  font-family: "BenchNine", sans-serif;
+  font-weight: 200 !important;
+}
+h4 {
+  text-transform: uppercase;
+  font-family: var(--heading-font-family);
+  letter-spacing: 6px;
 }
 nav {
-  font-family: "BenchNine", sans-serif;
+  font-family: var(--default-font-family);
 }
 footer {
   background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   padding: 20px 10px;
 }
-@media (max-width: 640px) {
-  .footer-image {
-    display: none;
-  }
-  footer {
-    text-align: center;
-  }
-  h2 {
-    display: none;
-  }
-  .hero {
-    text-align: center;
-  }
-  #email-address,
-  #telephone-number {
-    font-size: smaller;
-  }
-}
+
 .hero {
   background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   padding: 50px 10px 10px;
@@ -56,7 +52,11 @@ footer {
   margin: 0 auto;
 }
 .about {
-  border-radius: 360px;
+  border-radius: 20px;
+  max-width: 150px;
+}
+.headshot {
+  border-radius: 30px;
   max-width: 300px;
 }
 .footer-image {
@@ -67,10 +67,32 @@ footer {
 .work-info {
   margin: 25px 75px;
 }
+
 #email-address,
 #telephone-number,
 #learn-more {
   color: black;
   text-decoration: none;
-  font-family: "Rubik", sans-serif;
+}
+#learn-more {
+  font-weight: 400;
+}
+
+@media (max-width: 640px) {
+  .footer-image {
+    display: none;
+  }
+  footer {
+    text-align: center;
+  }
+  h2 {
+    display: none;
+  }
+  .hero {
+    text-align: center;
+  }
+  #email-address,
+  #telephone-number {
+    font-size: smaller;
+  }
 }

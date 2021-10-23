@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Rubik:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=BenchNine&family=Work+Sans:wght@200;400&display=swap"
       rel="stylesheet"
     />
     <script
@@ -43,17 +43,47 @@
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="/">Home</a>
             <a class="nav-link" href="/work.html">My Work</a>
-            <a class="nav-link" href="/about.html">About Me</a>
+            <a class="nav-link" href="/about.html">A Bit About Me</a>
           </div>
         </div>
       </div>
     </nav>
   </head>
   <body>
-     <div class="hero">
-      <h2>HELLO.</h2>
-      <h1>Gemma Kellett</h1>
-      <h3>Junior Front-End Developer</h3>
+    <div class="hero">
+      <div class="d-flex flex-row justify-content-evenly">
+        <h2>WORK.</h2>
+        <div class="d-flex flex-column">
+          <h1>Gemma Kellett</h1>
+          <h3>Front-End Developer</h3>
+          <br />
+          <a
+            class="btn btn-outline-dark col-6 mx-auto"
+            href="/about.html"
+            role="button"
+            >More Info</a
+          >
+        </div>
+      </div>
     </div>
+
+    <footer>
+      <div class="container" id="contact-me">
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="images/me.jpg" alt="photo of me" class="footer-image" />
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex flex-column">
+              <h4>Contact Me</h4>
+              <a href="tel:6049060655" id="telephone-number">604-906-0655</a>
+              <a href="mailto:g.kellett@outlook.com" id="email-address"
+                >g.kellett@outlook.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
