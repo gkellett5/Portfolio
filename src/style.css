@@ -78,7 +78,7 @@ footer {
 .certificate.c1:hover {
   transform-origin: left;
 }
-.certificate.c2:hover {
+.certificate.c3:hover {
   transform-origin: right;
 }
 .project-code {
@@ -112,7 +112,8 @@ footer {
     display: none;
   }
   .certificate.c1:hover,
-  .certificate.c2:hover {
+  .certificate.c2:hover,
+  .certificate.c3:hover {
     transform: scale(1.5);
     transform-origin: center;
   }
