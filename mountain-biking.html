@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⛰🚲 Mountain Biking BC</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        -180deg,
+        whitesmoke 5%,
+        #6d8089 25%,
+        #323e49 50%,
+        black 95%
+      );
+    }
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      color: #323e49;
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+    h2 {
+      text-align: center;
+      font-size: 15px;
+      font-weight: normal;
+      margin-bottom: 30px;
+      color: #d47506;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    p {
+      line-height: 1.75;
+      font-size: 13px;
+      margin: 20px 0 10px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      font-size: 20px;
+      color: #323e49;
+      opacity: 0.75;
+      padding: 15px 100px;
+      border: 1px solid #6d8089;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      transition: all 200ms ease-in-out;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    button:hover {
+      cursor: pointer;
+      font-size: 22px;
+      opacity: 0.75;
+      border: 1px solid #d47506;
+    }
+    .documentBody {
+      background: whitesmoke;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 10px 20px 20px 20px;
+      border: 1px solid #323e49;
+      border-radius: 10px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    .learnMore {
+      font-size: 12px;
+    }
+    .link {
+      color: #d47506;
+      text-decoration: none;
+      font-size: 12px;
+    }
+    .link:hover {
+      text-decoration: underline;
+    }
+    .textBody {
+      font-size: 13px;
+    }
+    .mtbButton {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #d47506;
+    }
+    .footer {
+      text-align: center;
+      font-size: 10px;
+      font-family: monospace;
+      margin-top: 0;
+      color: #323e49;
+    }
+    .emoji {
+      font-size: 20px;
+      font-style: normal;
+    }
+  </style>
+  <body>
+    <div class="documentBody">
+      <h1>Mountain Biking</h1>
+      <hr />
+      <h2>British Columbia, Canada</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/012/345/original/p5pb15939648.jpg?1625456792"
+        alt="manual in the mountains"
+      />
+      <p>
+        Nowhere on earth is mountain biking culture as <strong>rich</strong> and
+        <strong>vibrant</strong> as it is in British Columbia. It's why people
+        call it the spiritual home of mountain biking. Canada's westernmost
+        province is a diverse 944,735 square kilometre (364,800 sq mi) landscape
+        squeezed between the Rocky Mountains to the east and the Pacific Ocean
+        to the west. BC's trails have long been used to connect communities,
+        facilitate trade, and inspire adventure—beginning with the First Nations
+        who have called this place home since time immemorial.
+        <br />
+        <br />
+        From its early origins on Vancouver’s North Shore to the wild trails of
+        the interior, mountain biking culture in British Columbia has been
+        shaped by the landscape and nurtured by the tribe. Recognized as one of
+        the most important regions in the world for mountain biking, BC offers a
+        vast variety of terrain to challenge and delight riders of every stripe
+        and stoke level. Explore our six diverse regions to find the routes that
+        suit you best.
+        <br />
+        <br />
+        No matter your skill level or riding style, British Columbia has a
+        mountain biking adventure for you. Find out why this must-ride
+        destination - <em>worthy of icon status</em> — is a place every mountain
+        biker should experience at least once in their lifetime. Explore trails
+        <a
+          class="link"
+          class="textBody"
+          href="https://www.trailforks.com/region/british-columbia"
+          target="_blank"
+        >
+          here</a
+        >.
+      </p>
+      <div class="learnMore">
+        <br />
+        → 10 Reasons BC is an Iconic Mountain Bike Destination:
+        <a
+          class="link"
+          href="https://mountainbikingbc.ca/the-bc-difference/"
+          target="_blank"
+        >
+          Mountain Biking BC
+        </a>
+        <br />
+        <br />
+      </div>
+      <button>
+        Discover your
+        <span class="mtbButton"> Mountain Biking </span> Adventure!
+      </button>
+      <div class="footer">
+        Coded by Gemma Kellett
+        <div class="emoji">⛰🚲</div>
+      </div>
+    </div>
+    <script>
+      function mtbAdventure() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let level = prompt(
+          "What is your MTB ability level? (Beginner, Intermediate or Expert)"
+        )
+          .toLowerCase()
+          .trim();
+        if (level === "beginner" || level === "intermediate") {
+          alert(`Let's find you some 🟢 / 🟦 trails ${name}!`);
+        } else {
+          alert(`Let's find you some 🚲 trails ${name}!`);
+        }
+        let thankYou = document.querySelector("p");
+        thankYou.innerHTML = `Thank You ${name}, we will be in touch via ${email} to help plan your ${level} mountain biking adventure!`;
+      }
+      let findAdventure = document.querySelector("button");
+      findAdventure.addEventListener("click", mtbAdventure);
+    </script>
+  </body>
+</html>
