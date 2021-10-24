@@ -35,10 +35,6 @@ footer {
   background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   padding: 20px 10px;
 }
-footer #source-code {
-  font-size: 10px;
-  float: right;
-}
 
 .hero {
   background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
@@ -71,7 +67,7 @@ footer #source-code {
   float: right;
 }
 .work-info {
-  margin: 25px 75px;
+  margin: 20px;
 }
 .certificate {
   transition: all 0.2s ease-in-out;
@@ -84,6 +80,9 @@ footer #source-code {
 }
 .certificate.c2:hover {
   transform-origin: right;
+}
+.project-code {
+  font-size: 12px;
 }
 
 #email-address,
@@ -99,7 +98,7 @@ footer #source-code {
   font-size: 12px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 694px) {
   h2 {
     display: none;
   }

@@ -19,13 +19,17 @@
       rel="stylesheet"
     />
     <script
+      src="https://kit.fontawesome.com/bd5cbcec47.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="/" title="Homepage" title="Homepage">
           <img src="images/GK-logos.jpeg" alt="name logo" class="logo" />
         </a>
         <button
@@ -41,9 +45,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-            <a class="nav-link" href="/work.html">My Work</a>
-            <a class="nav-link" href="/about.html">A Bit About Me</a>
+            <a class="nav-link" aria-current="page" href="/" title="Homepage"
+              >Home</a
+            >
+            <a class="nav-link active" href="/work.html" title="Gemma's Work"
+              >My Work</a
+            >
+            <a class="nav-link" href="/about.html" title="About Gemma"
+              >A Bit About Me</a
+            >
           </div>
         </div>
       </div>
@@ -132,12 +142,7 @@
             with colour and design.
             <br />
             <br />
-            <a
-              href=""
-              target="_blank"
-              id="source-code"
-              >Open-Source Code</a
-            >
+            <a href="" target="_blank" id="source-code">Open-Source Code</a>
             <br />
             <a href="" target="_blank" id="link">Go to MTB Website →</a>
           </p>
@@ -171,8 +176,9 @@
       <p>
         <i
           >Breif: Create a responsive portfolio webiste. The project should
-          include a hero header, footer, multiple HTML pages and SEO. Host your
-          project on Netlify and add a link to the Github repository.</i
+          include a hero header, footer, multiple HTML pages and SEO friendly.
+          Host your project on Netlify and add a link to the Github
+          repository.</i
         >
         <br />
         This website is still very much a work in progress! It is the final
@@ -208,12 +214,20 @@
           </div>
         </div>
       </div>
-      <a
-        href="https://github.com/gkellett5/Portfolio"
-        target="_blank"
-        id="source-code"
-        >Open-Source Code</a
-      >
+      <div class="d-flex flex-row d-block mx-auto justify-content-center mt-2">
+        <i class="fab fa-github-square p-2"></i>
+        <i class="fab fa-linkedin p-2"></i>
+        <i class="fab fa-slack p-2"></i>
+      </div>
+      <p class="project-code text-center mt-2 mb-0">
+        This project was coded by me, and is
+        <a
+          href="https://github.com/gkellett5/Portfolio"
+          target="_blank"
+          id="source-code"
+          >open-sourced</a
+        >
+      </p>
     </footer>
   </body>
 </html>
